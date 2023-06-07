@@ -1,0 +1,9 @@
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.colored {
+  background-color: #383838 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  color: aliceblue;
+}

@@ -70,7 +70,7 @@ const LandHeader = () => {
           level={isMobile ? 2 : 1}
           style={{ paddingBottom: "50px", color: "#C3DC00", zIndex:"10"}}
         >
-          Se parte de la Hackathon
+          Esás listo para la Hackathon
           <br style={{ display: isMobile ? "" : "none" }} /> TaxisLibres 2023
         </Title>
         <Button

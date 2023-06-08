@@ -8,13 +8,15 @@ import {
 } from "@ant-design/icons";
 import { Affix, Button, MenuProps, Image } from "antd";
 import { Menu } from "antd";
-import "../index.css"
+import "../index.css";
 
 const items: MenuProps["items"] = [
   {
     label: <a href="#home"></a>,
     key: "home",
-    icon: <Image width={50} preview={false} src={"/img/logoTaxisLibres.webp"} />,
+    icon: (
+      <Image width={50} preview={false} src={"/img/logoTaxisLibres.webp"} />
+    ),
   },
   {
     label: <a href="#knowMore">Conocenos</a>,
@@ -79,19 +81,26 @@ const LandNavBar: React.FC = () => {
         transition: "all 0.8s",
         height: isMobile ? "auto" : navheight,
         width: isMobile ? "256" : "100%",
+        backgroundColor: "#5c5c94",
+        boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.4)",
+        color: "aliceblue",
         fontSize: "20px",
         zIndex: "999",
       }}
-      className={`navbar-default ${isMobile ? "colored" : navbarClass}`}
     >
       <Affix>
-        <div style={{display: "fixed"}}>
+        <div
+          style={{
+            backgroundColor: "#5c5c94",
+            display: "fixed",
+          }}
+        >
           <Button
             type="primary"
             onClick={toggleCollapsed}
             style={{
               display: isMobile ? "block" : "none",
-              backgroundColor: "transparent",
+              backgroundColor: "#5c5c94",
               height: "9vh",
             }}
           >

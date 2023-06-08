@@ -22,7 +22,7 @@ module.exports = {
     rules: [
       // `js` and `jsx` files are parsed using `babel`
       {
-        test: /\.(js|jsx|css)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -33,8 +33,12 @@ module.exports = {
       },
       // `ts` and `tsx` files are parsed using `ts-loader`
       {
-        test: /\.(ts|tsx|css)$/,
+        test: /\.(ts|tsx)$/,
         loader: "ts-loader",
+      },
+      {
+        test: /\.(css)$/,
+        loader: "css-loader",
       },
       {
         type: "asset",

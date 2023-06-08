@@ -1,12 +1,8 @@
-
-.transparent {
-  background-color: transparent !important;
-  box-shadow: none;
-}
-.colored {
-  background-color: #5c5c94 !important;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  color: aliceblue;
+.root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 1s;
 }
 
 body {

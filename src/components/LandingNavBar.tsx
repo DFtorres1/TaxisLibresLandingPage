@@ -8,12 +8,13 @@ import {
 } from "@ant-design/icons";
 import { Affix, Button, MenuProps, Image } from "antd";
 import { Menu } from "antd";
+import "../index.css"
 
 const items: MenuProps["items"] = [
   {
     label: <a href="#home"></a>,
     key: "home",
-    icon: <Image width={50} preview={false} src={"/logoTaxisLibres.webp"} />,
+    icon: <Image width={50} preview={false} src={"/img/logoTaxisLibres.webp"} />,
   },
   {
     label: <a href="#knowMore">Conocenos</a>,

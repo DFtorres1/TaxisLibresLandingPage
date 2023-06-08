@@ -5,12 +5,12 @@ import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
 
 const logos = [
-  { name: "TaxisLibres", source: "/logoTaxisLibres.webp" },
-  { name: "Vanti", source: "/logoVanti.webp" },
-  { name: "Ecopetrol", source: "/logoEcopetrol.webp" },
-  { name: "TGI", source: "/logoTGI.webp" },
-  { name: "Volkswagen", source: "/logoVolkswagen.webp" },
-  { name: "Ford", source: "/logoFord.webp" },
+  { name: "TaxisLibres", source: "/img/logoTaxisLibres.webp" },
+  { name: "Vanti", source: "/img/logoVanti.webp" },
+  { name: "Ecopetrol", source: "/img/logoEcopetrol.webp" },
+  { name: "TGI", source: "/img/logoTGI.webp" },
+  { name: "Volkswagen", source: "/img/logoVolkswagen.webp" },
+  { name: "Ford", source: "/img/logoFord.webp" },
 ];
 
 const LandHeader = () => {
@@ -47,13 +47,13 @@ const LandHeader = () => {
           alignItems: "center",
           justifyContent: "center",
           display: "flex",
-          height: isMobile ? "100vh" : "77vh",
+          height: isMobile ? "100vh" : "78vh",
           flexDirection: "column",
         }}
       >
         <div
           style={{
-            backgroundImage: "url(./logoTaxisLibres.png)",
+            backgroundImage: "url(/img/logoTaxisLibres.webp)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             position: "absolute",

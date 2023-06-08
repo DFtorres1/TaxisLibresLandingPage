@@ -36,9 +36,13 @@ module.exports = {
         test: /\.(ts|tsx|css)$/,
         loader: "ts-loader",
       },
+      {
+        type: "asset",
+        test: /\.(png|gif|jpg|webp)$/i,
+      },
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx", ".json"],
   },
 };

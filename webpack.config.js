@@ -22,13 +22,18 @@ module.exports = {
     rules: [
       // `js` and `jsx` files are parsed using `babel`
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|css)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-typescript", "@babel/preset-env"],
+          },
+        },
       },
       // `ts` and `tsx` files are parsed using `ts-loader`
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.(ts|tsx|css)$/,
         loader: "ts-loader",
       },
     ],

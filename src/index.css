@@ -1,13 +1,22 @@
+
+.transparent {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.colored {
+  background-color: #5c5c94 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+}
+
 body {
-  background-color: rgb(255, 255, 97);
+  background-color: #fff;
   margin: 0;
+  
+  transition: all 1s;
   font-family: Montserrat, sans-serif, 'Helvetica Neue', -apple-system, BlinkMacSystemFont,
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans'
     ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: 'Montserrat', sans-serif
 }

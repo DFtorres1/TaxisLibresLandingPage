@@ -13,7 +13,7 @@ const items: MenuProps["items"] = [
   {
     label: <a href="#home"></a>,
     key: "home",
-    icon: <Image width={50} preview={false} src={"./logoTaxisLibres.png"} />,
+    icon: <Image width={50} preview={false} src={"/logoTaxisLibres.webp"} />,
   },
   {
     label: <a href="#knowMore">Conocenos</a>,

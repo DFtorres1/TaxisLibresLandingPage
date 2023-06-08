@@ -4,10 +4,10 @@ import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
 
 const organizers = [
-  { name: "Guardian", source: "./Guardian.png" },
-  { name: "Centinela", source: "./Centinela.png" },
-  { name: "Capitana", source: "./Capitana.png" },
-  { name: "Inspector", source: "./Inspector.png" },
+  { name: "Guardian", source: "/Guardian.webp" },
+  { name: "Centinela", source: "/Centinela.webp" },
+  { name: "Capitana", source: "/Capitana.webp" },
+  { name: "Inspector", source: "/Inspector.webp" },
 ];
 
 const LandKnowMore = () => {
@@ -73,7 +73,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 150 : 300}
-                src="./iconFree.png"
+                src="/iconFree.webp"
               />{" "}
               Gratuito
             </Title>
@@ -84,7 +84,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 150 : 300}
-                src="./iconDigital.png"
+                src="/iconDigital.webp"
               />
             </Title>
             <Title
@@ -93,7 +93,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 150 : 300}
-                src="./iconWorldPeople.png"
+                src="/iconWorldPeople.webp"
               />
               +540 personas
             </Title>
@@ -104,7 +104,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 150 : 300}
-                src="./iconMoney.png"
+                src="/iconMoney.webp"
               />
             </Title>
             <Title level={2} style={{ color: "#C3DC00" }}>

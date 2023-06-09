@@ -63,47 +63,47 @@ const LandKnowMore = () => {
           }}
         >
           <Col style={{ textAlign: "center" }}>
-            <Title style={{ color: "#C3DC00", fontSize: isMobile ? "30px" : "50px" }}>
+            <Title style={{ color: "#C3DC00", fontSize: isMobile ? "20px" : "40px" }}>
               ¡Da solucion a retos reales sobre movilidad en el país y obtén
               beneficios!
             </Title>
             <Title
-              style={{ color: "#C3DC00", fontSize: isMobile ? "50px" : "70px" }}
+              style={{ color: "#C3DC00", fontSize: isMobile ? "40px" : "60px" }}
             >
               <Image
                 preview={false}
-                width={isMobile ? 150 : 300}
+                width={isMobile ? 130 : 280}
                 src="/img/iconFree.webp"
               />{" "}
               Gratuito
             </Title>
             <Title
-              style={{ color: "#C3DC00", fontSize: isMobile ? "50px" : "70px" }}
+              style={{ color: "#C3DC00", fontSize: isMobile ? "40px" : "60px" }}
             >
               100% digital
               <Image
                 preview={false}
-                width={isMobile ? 150 : 300}
+                width={isMobile ? 130 : 280}
                 src="/img/iconDigital.webp"
               />
             </Title>
             <Title
-              style={{ color: "#C3DC00", fontSize: isMobile ? "50px" : "70px" }}
+              style={{ color: "#C3DC00", fontSize: isMobile ? "40px" : "60px" }}
             >
               <Image
                 preview={false}
-                width={isMobile ? 150 : 300}
+                width={isMobile ? 130 : 280}
                 src="/img/iconWorldPeople.webp"
               />
               +540 personas
             </Title>
             <Title
-              style={{ color: "#C3DC00", fontSize: isMobile ? "50px" : "70px" }}
+              style={{ color: "#C3DC00", fontSize: isMobile ? "40px" : "60px" }}
             >
               +$USD 25K
               <Image
                 preview={false}
-                width={isMobile ? 150 : 300}
+                width={isMobile ? 130 : 280}
                 src="/img/iconMoney.webp"
               />
             </Title>

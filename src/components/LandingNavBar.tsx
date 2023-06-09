@@ -81,7 +81,7 @@ const LandNavBar: React.FC = () => {
         transition: "all 0.8s",
         height: isMobile ? "auto" : navheight,
         width: isMobile ? "256" : "100%",
-        backgroundColor: "#5c5c94",
+        backgroundColor: isMobile? "#5c5c94": collapsed? "#5c5c94" : "transparent",
         boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.4)",
         color: "aliceblue",
         fontSize: "20px",

@@ -61,6 +61,8 @@ const LandHeader = () => {
             left: "0",
             height: "100%",
             width: "100%",
+            maxHeight: "95vh",
+            maxWidth: "95vw",
             backgroundColor: "rgba(255, 255, 255, 0.5)",
             opacity: "0.06",
             zIndex: "1"
@@ -70,8 +72,8 @@ const LandHeader = () => {
           level={isMobile ? 2 : 1}
           style={{ paddingBottom: "50px", color: "#C3DC00", zIndex:"10"}}
         >
-          Esás listo para la Hackathon
-          <br style={{ display: isMobile ? "" : "none" }} /> TaxisLibres 2023
+          Estás listo para la Hackathon
+          <br style={{ display: isMobile ? "" : "none" }} /> TaxisLibres 2023?
         </Title>
         <Button
           style={{

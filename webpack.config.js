@@ -39,6 +39,16 @@ module.exports = {
       {
         test: /\.(css)$/,
         loader: "css-loader",
+      },{
+        test: /\.(jpe?g|gif|png|svg|webp)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000
+            }
+          }
+        ]
       },
       {
         type: "asset",

@@ -9,13 +9,14 @@ import {
 import { Affix, Button, MenuProps, Image } from "antd";
 import { Menu } from "antd";
 import "../index.css";
+import logoTaxisLibres from "../img/logoTaxisLibres.webp"
 
 const items: MenuProps["items"] = [
   {
     label: <a href="#home"></a>,
     key: "home",
     icon: (
-      <Image width={50} preview={false} src={"/img/logoTaxisLibres.webp"} />
+      <Image width={50} preview={false} src={logoTaxisLibres} />
     ),
   },
   {

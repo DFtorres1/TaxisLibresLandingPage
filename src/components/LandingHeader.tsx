@@ -3,14 +3,20 @@ import Button from "antd/es/button/button";
 import { Content } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
+import logoTaxis from "../img/logoTaxisLibres.webp"
+import logoVanti from "../img/logoVanti.webp"
+import logoEcopetrol from "../img/logoEcopetrol.webp"
+import logoTGI from "../img/logoTGI.webp"
+import logoVolkswagen from "../img/logoVolkswagen.webp"
+import logoFord from "../img/logoFord.webp"
 
 const logos = [
-  { name: "TaxisLibres", source: "/img/logoTaxisLibres.webp" },
-  { name: "Vanti", source: "/img/logoVanti.webp" },
-  { name: "Ecopetrol", source: "/img/logoEcopetrol.webp" },
-  { name: "TGI", source: "/img/logoTGI.webp" },
-  { name: "Volkswagen", source: "/img/logoVolkswagen.webp" },
-  { name: "Ford", source: "/img/logoFord.webp" },
+  { name: "TaxisLibres", source: logoTaxis },
+  { name: "Vanti", source: logoVanti },
+  { name: "Ecopetrol", source: logoEcopetrol },
+  { name: "TGI", source: logoTGI },
+  { name: "Volkswagen", source: logoVolkswagen },
+  { name: "Ford", source: logoFord },
 ];
 
 const LandHeader = () => {
@@ -53,7 +59,7 @@ const LandHeader = () => {
       >
         <div
           style={{
-            backgroundImage: "url(/img/logoTaxisLibres.webp)",
+            backgroundImage: `url(${logoTaxis})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             position: "absolute",

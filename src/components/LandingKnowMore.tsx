@@ -2,12 +2,20 @@ import { Layout, Image, Row, Col } from "antd";
 import { Content, Header } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
+import guardian from "../img/Guardian.webp"
+import centinela from "../img/Centinela.webp"
+import capitana from "../img/Capitana.webp"
+import inspector from "../img/Inspector.webp"
+import iconMoney from "../img/iconMoney.webp"
+import iconFree from "../img/iconFree.webp"
+import iconWorldPeople from "../img/iconWorldPeople.webp"
+import iconDigital from "../img/iconDigital.webp"
 
 const organizers = [
-  { name: "Guardian", source: "/img/Guardian.webp" },
-  { name: "Centinela", source: "/img/Centinela.webp" },
-  { name: "Capitana", source: "/img/Capitana.webp" },
-  { name: "Inspector", source: "/img/Inspector.webp" },
+  { name: "Guardian", source: guardian },
+  { name: "Centinela", source: centinela },
+  { name: "Capitana", source: capitana },
+  { name: "Inspector", source: inspector },
 ];
 
 const LandKnowMore = () => {
@@ -73,7 +81,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 130 : 280}
-                src="/img/iconFree.webp"
+                src={iconFree}
               />{" "}
               Gratuito
             </Title>
@@ -84,7 +92,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 130 : 280}
-                src="/img/iconDigital.webp"
+                src={iconDigital}
               />
             </Title>
             <Title
@@ -93,7 +101,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 130 : 280}
-                src="/img/iconWorldPeople.webp"
+                src={iconWorldPeople}
               />
               +540 personas
             </Title>
@@ -104,7 +112,7 @@ const LandKnowMore = () => {
               <Image
                 preview={false}
                 width={isMobile ? 130 : 280}
-                src="/img/iconMoney.webp"
+                src={iconMoney}
               />
             </Title>
             <Title level={2} style={{ color: "#C3DC00" }}>

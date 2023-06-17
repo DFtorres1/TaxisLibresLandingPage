@@ -1,15 +1,15 @@
 import { Layout, Image, Row, Col } from "antd";
-import { Content, Header } from "antd/es/layout/layout";
+import { Header } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
-import guardian from "../img/Guardian.webp"
-import centinela from "../img/Centinela.webp"
-import capitana from "../img/Capitana.webp"
-import inspector from "../img/Inspector.webp"
-import iconMoney from "../img/iconMoney.webp"
-import iconFree from "../img/iconFree.webp"
-import iconWorldPeople from "../img/iconWorldPeople.webp"
-import iconDigital from "../img/iconDigital.webp"
+import guardian from "../img/Guardian.webp";
+import centinela from "../img/Centinela.webp";
+import capitana from "../img/Capitana.webp";
+import inspector from "../img/Inspector.webp";
+import iconMoney from "../img/iconMoney.webp";
+import iconFree from "../img/iconFree.webp";
+import iconWorldPeople from "../img/iconWorldPeople.webp";
+import iconDigital from "../img/iconDigital.webp";
 
 const organizers = [
   { name: "Guardian", source: guardian },
@@ -23,7 +23,7 @@ const LandKnowMore = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 900px)");
-    const handleMediaQueryChange = (event) => {
+    const handleMediaQueryChange = (event: any) => {
       setIsMobile(event.matches);
     };
 
@@ -71,7 +71,9 @@ const LandKnowMore = () => {
           }}
         >
           <Col style={{ textAlign: "center" }}>
-            <Title style={{ color: "#C3DC00", fontSize: isMobile ? "20px" : "40px" }}>
+            <Title
+              style={{ color: "#C3DC00", fontSize: isMobile ? "20px" : "40px" }}
+            >
               ¡Da solucion a retos reales sobre movilidad en el país y obtén
               beneficios!
             </Title>

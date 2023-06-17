@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import {
-  HomeOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   FormOutlined,
@@ -9,15 +8,13 @@ import {
 import { Affix, Button, MenuProps, Image } from "antd";
 import { Menu } from "antd";
 import "../index.css";
-import logoTaxisLibres from "../img/logoTaxisLibres.webp"
+import logoTaxisLibres from "../img/logoTaxisLibres.webp";
 
 const items: MenuProps["items"] = [
   {
-    label: <a href="#home"></a>,
+    label: <a href="#home">Home</a>,
     key: "home",
-    icon: (
-      <Image width={50} preview={false} src={logoTaxisLibres} />
-    ),
+    icon: <Image width={50} preview={false} src={logoTaxisLibres} />,
   },
   {
     label: <a href="#knowMore">Conocenos</a>,
@@ -40,7 +37,7 @@ const LandNavBar: React.FC = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 900px)");
-    const handleMediaQueryChange = (event) => {
+    const handleMediaQueryChange = (event: any) => {
       setIsMobile(event.matches);
     };
 
@@ -82,7 +79,11 @@ const LandNavBar: React.FC = () => {
         transition: "all 0.8s",
         height: isMobile ? "auto" : navheight,
         width: isMobile ? "256" : "100%",
-        backgroundColor: isMobile? "#5c5c94": collapsed? "#5c5c94" : "transparent",
+        backgroundColor: isMobile
+          ? "#5c5c94"
+          : collapsed
+          ? "#5c5c94"
+          : "transparent",
         boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.4)",
         color: "aliceblue",
         fontSize: "20px",

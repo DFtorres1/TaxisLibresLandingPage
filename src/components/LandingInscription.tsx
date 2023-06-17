@@ -78,7 +78,7 @@ const LandInscription = () => {
 
   const [otherArea, setOtherArea] = useState(false);
 
-  const handleChange = (event) => {
+  const handleChange = (event: any) => {
     setOtherArea(event[0] === "other" ? true : false);
     console.log(event[0]);
   };
@@ -123,7 +123,7 @@ const LandInscription = () => {
         style={{ maxWidth: "1200px", minWidth: "400px" }}
         scrollToFirstError
       >
-        <Row justify={"center"} style={{width: "400px"}} >
+        <Row justify={"center"} style={{ width: "400px" }}>
           <Col>
             <Form.Item
               style={{ paddingBottom: "5px", width: "400px" }}

@@ -1,14 +1,14 @@
-import { Carousel, Image, Row, Space } from "antd";
+import { Image } from "antd";
 import Button from "antd/es/button/button";
 import { Content } from "antd/es/layout/layout";
 import Title from "antd/es/typography/Title";
 import { useEffect, useState } from "react";
-import logoTaxis from "../img/logoTaxisLibres.webp"
-import logoVanti from "../img/logoVanti.webp"
-import logoEcopetrol from "../img/logoEcopetrol.webp"
-import logoTGI from "../img/logoTGI.webp"
-import logoVolkswagen from "../img/logoVolkswagen.webp"
-import logoFord from "../img/logoFord.webp"
+import logoTaxis from "../img/logoTaxisLibres.webp";
+import logoVanti from "../img/logoVanti.webp";
+import logoEcopetrol from "../img/logoEcopetrol.webp";
+import logoTGI from "../img/logoTGI.webp";
+import logoVolkswagen from "../img/logoVolkswagen.webp";
+import logoFord from "../img/logoFord.webp";
 
 const logos = [
   { name: "TaxisLibres", source: logoTaxis },
@@ -24,7 +24,7 @@ const LandHeader = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 900px)");
-    const handleMediaQueryChange = (event) => {
+    const handleMediaQueryChange = (event: any) => {
       setIsMobile(event.matches);
     };
 
@@ -71,12 +71,12 @@ const LandHeader = () => {
             maxWidth: "95vw",
             backgroundColor: "rgba(255, 255, 255, 0.5)",
             opacity: "0.06",
-            zIndex: "1"
+            zIndex: "1",
           }}
         />
         <Title
           level={isMobile ? 2 : 1}
-          style={{ paddingBottom: "50px", color: "#C3DC00", zIndex:"10"}}
+          style={{ paddingBottom: "50px", color: "#C3DC00", zIndex: "10" }}
         >
           Estás listo para la Hackathon
           <br style={{ display: isMobile ? "" : "none" }} /> TaxisLibres 2023?
